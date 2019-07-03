@@ -1,9 +1,8 @@
----
 version: 2
 
 defaults: &defaults
   docker:
-    - image: gcr.io/planet-4-151612/p4-builder:latest
+    - image: greenpeaceinternational/p4-builder:latest
 
 job_environments:
   common_environment: &common_environment
@@ -26,8 +25,6 @@ job_environments:
     CLOUDSQL_INSTANCE: planet4-prod
     GCLOUD_CLUSTER: planet4-production
     GOOGLE_PROJECT_ID: planet4-production
-    MAX_REPLICA_COUNT: 1
-    MIN_REPLICA_COUNT: 1
     HELM_NAMESPACE: poland
     HELM_RELEASE: planet4-poland-release
     NEWRELIC_APPNAME: P4 Poland Release
@@ -44,7 +41,6 @@ job_environments:
     NEWRELIC_APPNAME: P4 Poland Production
     WP_DB_NAME: planet4-poland_wordpress_master
     WP_STATELESS_BUCKET: planet4-poland-stateless
-
 
 job_definitions:
   build_steps: &build_steps

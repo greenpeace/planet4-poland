@@ -4,8 +4,7 @@
 	"license": "MIT",
 	"require": {
 		"greenpeace/planet4-child-theme-poland" : "0.*",
-		"greenpeace/planet4-plugin-migrated-urls": "0.0.1",
-		"wpackagist-plugin/wp-stateless": "2.1.7"
+		"greenpeace/planet4-plugin-migrated-urls": "0.0.1"
 	},
 	"scripts": {
 		"core:language": "wp language core install pl_PL; wp language core activate pl_PL",

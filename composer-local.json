@@ -1,14 +1,14 @@
 {
-    "name": "greenpeace/planet4-poland",
-    "description": "Greenpeace P4 Poland",
-    "license": "MIT",
-    "require": {
-        "greenpeace/planet4-child-theme-poland" : "v0.*"
-    },
-    "scripts": {
-        "core:language": "wp language core install pl_PL; wp language core activate pl_PL",
-        "site:custom": [
-            "@core:language"
-        ]
-    }
+  "name": "greenpeace/planet4-poland",
+  "description": "Greenpeace P4 Poland",
+  "license": "MIT",
+  "require": {
+    "greenpeace/planet4-child-theme-poland" : "dev-main"
+  },
+  "scripts": {
+    "core:language": "wp language core install pl_PL; wp language core activate pl_PL",
+    "site:custom": [
+      "@core:language"
+    ]
+  }
 }
